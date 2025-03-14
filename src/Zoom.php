@@ -60,8 +60,10 @@ class Zoom
     // create meeting
     public function createMeeting(array $data)
     {
+        $user = (isset($data['user'])) ? $data['user'] : 'me';
+        
         try {
-            $response = $this->client->request('POST', 'users/me/meetings', [
+            $response = $this->client->request('POST', 'users/' . $user . '/meetings', [
                 'json' => $data,
             ]);
             $res = json_decode($response->getBody(), true);
