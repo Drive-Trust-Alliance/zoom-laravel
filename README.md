@@ -111,6 +111,7 @@ At present we cover the following modules
                     "duration" => 60, // in minutes
                     "timezone" => 'Asia/Dhaka', // set your timezone
                     "password" => 'set your password',
+                    "user" => 'user@example.com', // if a paid Zoom account has multiple users, you can pass a specific user ID to designate them as the host
                     "start_time" => 'set your start time', // set your start time
                     "template_id" => 'set your template id', // set your template id  Ex: "Dv4YdINdTk+Z5RToadh5ug==" from https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingtemplates
                     "pre_schedule" => false,  // set true if you want to create a pre-scheduled meeting
